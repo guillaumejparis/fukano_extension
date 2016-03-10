@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "Fukano",
+  "description": "It tells you when Fukano is live on Twitch.",
+  "version": "1.0",
+  "icons": {
+    "48": "assets/fukano_logo_48.png"
+  },
+  "browser_action": {
+    "default_icon": "assets/fukano_logo_dark.png",
+    "default_title": "Fukano - Disconnected"
+  },
+  "background":{
+    "scripts": ["background.js"]
+  },
+  "web_accessible_resources": [
+    "assets/fukano_logo.png",
+    "assets/fukano_logo_dark.png"
+  ],
+  "permissions": [
+    "tabs",
+    "notifications",
+    "https://api.twitch.tv/"
+  ]
+}
